@@ -14,7 +14,7 @@ import net.sf.cglib.proxy.MethodProxy;
  * 
  * 通过方法名拦截
  * 
- * 获取注解中的 Class<? extends IAdvice>[],
+ * 获取注解中的 @IAdvice 的实现类的class
  * 数组中的顺序决定着执行顺序, 越靠前,越靠外(把目标方法当作中心, 前后包裹)
  * 
  * 通过无参的构造方法, 单例地创建 IAdvice 实现类
