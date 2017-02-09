@@ -6,7 +6,7 @@
 
 	<name>method-around-interceptor</name>
 	<description>method-around-interceptor</description>
-	<url>https://github.com/somefree/method-around-interceptor</url>
+	<url>https://github.com/somefree/methodaroundinterceptor</url>
 
 	<licenses>
 		<license>
@@ -21,12 +21,6 @@
 			<email>amx0728@163.com</email>
 		</developer>
 	</developers>
-
-	<scm>
-		<connection>scm:git:https://github.com/somefree/method-around-interceptor.git</connection>
-		<developerConnection>scm:git:https://github.com/somefree/method-around-interceptor.git</developerConnection>
-		<url>https://github.com/somefree/method-around-interceptor</url>
-	</scm>
 
 	<dependencies>
 		<!-- junit -->
@@ -67,67 +61,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<!-- Source -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>2.2.1</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- Javadoc -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.9.1</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<!-- GPG -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>oss</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-				</snapshotRepository>
-				<repository>
-					<id>oss</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
-		</profile>
-	</profiles>
-
+	
 </project>
