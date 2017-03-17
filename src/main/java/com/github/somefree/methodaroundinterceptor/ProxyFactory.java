@@ -23,7 +23,7 @@ public final class ProxyFactory {
 	/**
 	 * 通过无参的构造方法, 获取代理类, 单例, 拦截通知由注解 @Around 配置
 	 * 
-	 * @param clz 目标类的class111
+	 * @param clz 目标类的class
 	 * @return 代理类对象, 即目标类的子类对象
 	 */
 	public static <T> T getSingletonProxy(Class<T> clz) {
